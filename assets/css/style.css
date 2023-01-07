@@ -1,8 +1,41 @@
+/* google fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ovo&display=swap');
 
+/* all elemets */
 
 * {
     margin: 0;
     padding: 0;
     border: none;
+}
+
+/* body text */
+
+body {
+    font-family: 'Ovo', sans-serif;
+    color: #292929;
+}
+
+/* logo *//* nav menu */
+
+h1 {
+    text-transform: uppercase;
+    color: #f7b91a;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+#nav-menu {
+    float: right;
+    font-size: 120%;
+    margin-right: 30px;
+}
+
+#logo, #nav-menu {
+    line-height: 75px;
 }
