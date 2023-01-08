@@ -50,14 +50,14 @@ h1 {
 }
 
 #hero-banner {
-  background-image: url('../images/alex-portrait-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+    background-image: url('../images/alex-portrait-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 #hero-banner::after {
@@ -87,3 +87,85 @@ h1 {
     list-style: none;
   }
   
+/* about section */
+
+#about{
+    margin: 10px;
+    padding: 10px;
+}
+
+#about h2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 160%;
+    margin-top: -50px;
+}
+
+@media only screen and (min-width: 763px) {
+  #about h2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 280%;
+    margin-top: -70px;
+  }
+  #about{
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+/* timeline section */
+
+#timeline-section {
+  margin: 20px;
+  padding: 20px;
+}
+
+#timeline-section h1 {
+  font-size: 180%;
+}
+
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  list-style: none;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.timeline-item__date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item__content {
+  flex: 1;
+}
+
+/* timeline responsive */
+
+@media only screen and (min-width: 768px) {
+  .timeline {
+    flex-direction: row;
+  }
+  .timeline-item {
+    width: 50%;
+  }
+  .timeline-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
