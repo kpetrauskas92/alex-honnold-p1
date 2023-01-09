@@ -294,6 +294,8 @@ h1,h3 {
   max-height: 600px;
   max-width: 100%;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -378,7 +380,7 @@ blockquote p {
 }
 
 #follow-text h3 {
-  font-size: 180%;
+  font-size: 120%;
   padding-top: 20px;
 }
 
@@ -419,15 +421,15 @@ footer p {
 /* gallery styling */
 
 #gallery-title {
-  background-image: url('../images/gallery/gallery-heading-cover.jpg');
+  background-image: url('../images/gallery/gallery-heading-cover.webp');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   height: 100%;
   width: 100%;
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%); */
   
 }
 
@@ -435,6 +437,7 @@ footer p {
   font-size: 200%;
   text-align: center;
   padding: 100px;
+  background-color: #52525259;
 }
 
 #image-gallery-outer{
@@ -450,10 +453,22 @@ footer p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
+  padding-bottom: 15px;
 }
 
 #image-gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 769px) {
+
+  #image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+ 
 }
