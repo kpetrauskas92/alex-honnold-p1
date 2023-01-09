@@ -43,8 +43,9 @@ h1,h3 {
 }
 
 #nav-menu a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 1px;
   padding-right: 10px;
   color:#292929
@@ -58,7 +59,7 @@ h1,h3 {
 
 
 #logo, #nav-menu {
-    line-height: 75px;
+    line-height: 100px;
 }
 
 /* mobile burger menu */
@@ -71,7 +72,7 @@ h1,h3 {
   cursor: pointer;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 860px) {
   #logo {
     font-size: 220%;
   }
@@ -79,20 +80,20 @@ h1,h3 {
   #nav-menu {
     position: absolute;
     top: 75px;
-    /* right: 0; */
     width: 100%;
-
     background-color: rgba(255, 255, 255, 0.322);
-    /* border: 1px solid #ccc; */
-    /* box-shadow: 1px 1px 1px rgba(0,0,0,0.2); */
     z-index: 1;
     display: none;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 550%);
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 600%);
   }
   #nav-menu ul {
     /* text-align: center; */
     font-size: 80%;
     margin-left: 30px;
+  }
+
+  #nav-menu a {
+    color:#ffffff
   }
 
   #nav-menu a:hover {
@@ -103,6 +104,11 @@ h1,h3 {
   #nav-menu.active {
     display: block;
   }
+
+  #logo, #nav-menu {
+    line-height: 75px;
+}
+
   #burger-menu {
     display: block;
     float: right;
@@ -111,7 +117,7 @@ h1,h3 {
   
 }
 
-@media (min-width: 769px) {
+@media (min-width: 860px) {
   #burger-menu {
     display: none;
   }
@@ -151,6 +157,7 @@ h1,h3 {
 
 #hero-text {
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 20%;
     left: 10%;
@@ -163,6 +170,10 @@ h1,h3 {
 #hero-text li {
     list-style: none;
   }
+
+#hero-text li::before {
+  content: "⦿"; color: #f7b91a
+}
 
   @media (max-width: 769px) {
     #hero-text {
