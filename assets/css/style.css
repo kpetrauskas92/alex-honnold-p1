@@ -74,7 +74,7 @@ h1,h3 {
 
 @media (max-width: 860px) {
   #logo {
-    font-size: 220%;
+    font-size: 200%;
   }
 
   #nav-menu {
@@ -330,6 +330,7 @@ h1,h3 {
 /* trailer text */
 
 #trailer-text {
+  
   margin: 10px 20px 0px 20px;
   padding: 10px 20px 0px 20px;
   font-size: 180%;
@@ -364,29 +365,42 @@ blockquote p {
 /* footer */
 
 #follow-text {
-  float: left;
-  background: linear-gradient(to right, #fcdb93, #d3d3d300);
-  margin: 20px;
-  padding: 5px;
-  text-align: left;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: -4px;
+  padding-bottom: 5px;
 }
 
 #follow-text h3 {
   font-size: 180%;
+  padding-top: 20px;
+}
+
+#follow-text p {
+  color: white;
+
 }
 
 footer {
-  display: flex;
-  justify-content: right;
+  text-align: center;
+  background-color: black;
+  width: 100%;
   font-size: 180%;
-  line-height: 75px;
-  margin-right: 30px;
+  margin: 0px 0px 0px 0px;
+  padding: 5px;
 }
 footer a {
-  padding: 10px;
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 5px;
 }
 footer a:hover {
   color:#f7b91a
+}
+footer p {
+  color: white;
+  font-size: small;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
