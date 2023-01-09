@@ -59,8 +59,16 @@
 
 <div>
   <h3>Big Wall</h3>
+  <p>"The Timeline"</p>
   <blockquote>Big wall climbing is a type of rock climbing that involves climbing very large cliffs or rock faces that can take several days or even weeks to complete. It is typically done on cliffs that are more than 1000 feet tall and require the use of specialized techniques and equipment. These climbs are typically very challenging and require a high level of physical fitness, mental toughness, and technical skill. Big wall climbing routes often involve a combination of free climbing, aid climbing, and hauling gear up the cliff using a system of pulleys and anchors.</blockquote>
 </div>
+
+<!-- timeline images -->
+<section id="timeline-images-container">
+<div id="timeline-images">
+  <img src="assets/images/el-capitan.jpg" alt="El Capitan in Yosemite National Park">
+</div>
+</section>
 
   <ul class="timeline">
     <li class="timeline-item">
@@ -154,7 +162,13 @@
 
 </section>
 
+<!-- youtube trailer -->
+
+<section>
+  <h3 id="trailer-text">Free Solo Movie - Trailer</h3>
+  <p class="trailer-text__p ">"What made Alex Known to the World"</p>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/urRVZ4SW7WU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
 
 <!--footer-->
 
@@ -182,7 +196,7 @@ burgerMenu.addEventListener('click', () => {
 
 <!-- youtube api?  -->
 
-<script>
+<!-- <script>
   // 2. This code loads the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
 
@@ -226,8 +240,21 @@ burgerMenu.addEventListener('click', () => {
   function stopVideo() {
     player.stopVideo();
   }
+</script> -->
+
+<!-- hero grayscale scrolling effect -->
+
+<script>
+window.addEventListener('scroll', function() {
+  var scroll = window.pageYOffset;
+  var grayscale = scroll / 300;
+
+  document.querySelector('#hero-banner').style.filter = 'grayscale(' + grayscale + ')';
+  document.querySelector('#hero-banner').style.WebkitFilter = 'grayscale(' + grayscale + ')';
+  document.querySelector('#hero-banner').style.MozFilter = 'grayscale(' + grayscale + ')';
+  document.querySelector('#hero-banner').style.OFilter = 'grayscale(' + grayscale + ')';
+  document.querySelector('#hero-banner').style.MsFilter = 'grayscale(' + grayscale + ')';
+});
 </script>
-
-
 </body>
 </html>
