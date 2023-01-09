@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alex Honnold - Rock Climber">
+    <meta name="description" content="From Yosemite to the world: the story of Alex Honnold">
     <meta name="keywords" content="alex honnold, rock climbing, free solo, el capitan">
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -58,7 +58,7 @@
 <section id="timeline-section">
 
 <div>
-  <h1>Big Wall</h1>
+  <h3>Big Wall</h3>
   <blockquote>Big wall climbing is a type of rock climbing that involves climbing very large cliffs or rock faces that can take several days or even weeks to complete. It is typically done on cliffs that are more than 1000 feet tall and require the use of specialized techniques and equipment. These climbs are typically very challenging and require a high level of physical fitness, mental toughness, and technical skill. Big wall climbing routes often involve a combination of free climbing, aid climbing, and hauling gear up the cliff using a system of pulleys and anchors.</blockquote>
 </div>
 
@@ -151,10 +151,10 @@
       </div>
     </li>
       <blockquote>Free climbing is a form of rock climbing in which the climber uses only their physical strength, agility, and technique to ascend a route, without relying on any aids such as ropes or harnesses for support. This means that the climber must rely on their own ability to find and secure hand and foot holds, and to balance their body as they move upward. Free climbing can be done with or without protective gear, such as helmets and padding, depending on the climber's preference and the level of risk they are willing to take.</blockquote>
-<!-- time line image -->
-    
+
 </section>
-  
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/urRVZ4SW7WU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <!--footer-->
 
@@ -168,14 +168,66 @@
 <!-- font awesome kit -->
 
 <script src="https://kit.fontawesome.com/72dd490aed.js" crossorigin="anonymous"></script>
+
+<!-- burger menu event -->
+
 <script>
-  const burgerMenu = document.getElementById('burger-menu');
+const burgerMenu = document.getElementById('burger-menu');
 const navMenu = document.getElementById('nav-menu');
 
 burgerMenu.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 </script>
+
+<!-- youtube api?  -->
+
+<script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: 'M7lc1UVf-VE',
+      playerVars: {
+        'playsinline': 1
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      setTimeout(stopVideo, 6000);
+      done = true;
+    }
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
+</script>
+
 
 </body>
 </html>

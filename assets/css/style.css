@@ -19,8 +19,10 @@ body {
 
 /* logo *//* nav menu */
 
-h1 {
+h1,h3 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    text-shadow: 1px 1px #29292971;
     color: #f7b91a;
 }
 
@@ -42,8 +44,8 @@ h1 {
 
 #nav-menu a {
   text-decoration: none;
-  text-transform: lowercase;
-  letter-spacing: 2px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
   padding-right: 10px;
   color:#292929
 }
@@ -69,7 +71,7 @@ h1 {
   cursor: pointer;
 }
 
-@media (max-width: 763px) {
+@media (max-width: 769px) {
   #logo {
     font-size: 220%;
   }
@@ -79,15 +81,17 @@ h1 {
     top: 75px;
     /* right: 0; */
     width: 100%;
+
     background-color: rgba(255, 255, 255, 0.322);
     /* border: 1px solid #ccc; */
     /* box-shadow: 1px 1px 1px rgba(0,0,0,0.2); */
     z-index: 1;
     display: none;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 450%);
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 550%);
   }
   #nav-menu ul {
     /* text-align: center; */
+    font-size: 80%;
     margin-left: 30px;
   }
 
@@ -107,7 +111,7 @@ h1 {
   
 }
 
-@media (min-width: 763px) {
+@media (min-width: 769px) {
   #burger-menu {
     display: none;
   }
@@ -160,7 +164,7 @@ h1 {
     list-style: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     #hero-text {
       margin-top: 10px;
     }
@@ -193,7 +197,7 @@ h1 {
     margin-top: -50px;
 }
 
-@media only screen and (min-width: 763px) {
+@media only screen and (min-width: 769px) {
   #about h2 {
     position: absolute;
     text-transform: uppercase;
@@ -213,7 +217,7 @@ h1 {
   padding: 20px;
 }
 
-#timeline-section h1 {
+#timeline-section h3 {
   font-size: 180%;
 }
 
@@ -250,7 +254,7 @@ h1 {
 
 /* timeline responsive */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .timeline {
     flex-direction: row;
   }
