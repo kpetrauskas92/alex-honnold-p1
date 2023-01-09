@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From Yosemite to the world: the story of Alex Honnold">
+    <meta name="keywords" content="alex honnold, rock climbing, free solo, el capitan">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Alex Honnold</title>
+</head>
+<body>
+  
+<!--navigation bar-->
+
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Alex Honnold</h1>
+        </a>
+    <nav id="nav-menu">
+        
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+        <li><a href="#signup"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
+      </ul>
+      </nav>
+      <i id="burger-menu" class="fas fa-bars"></i>
+    </header>
+
+<!-- gallery tittle -->
+
+<section id="gallery-title">
+<h3>Gallery</h3>
+</section>
+
+<!--image gallery-->
+
+    <section id="image-gallery-outer">
+        <div id="image-gallery">
+            <img src="assets/images/gallery/image1.webp" alt="image1">
+            <img src="assets/images/gallery/image2.webp" alt="image2">
+            <img src="assets/images/gallery/image3.webp" alt="image3">
+            <img src="assets/images/gallery/image4.webp" alt="image4">
+            <img src="assets/images/gallery/image5.webp" alt="image5">
+            <img src="assets/images/gallery/image6.webp" alt="image6">
+            <img src="assets/images/gallery/image7.webp" alt="image7">
+            <img src="assets/images/gallery/image8.webp" alt="image8">
+            <img src="assets/images/gallery/image9.webp" alt="image9">
+            <img src="assets/images/gallery/image10.webp" alt="image9">
+          </div>
+          
+    </section>
+
+
+
+<!-- footer-->
+
+ <!-- <div id="follow-text">
+  <h3>Follow Alex</h3>
+  <p>"See what he is up to"</p>
+</div> -->
+
+<footer>
+  <div id="follow-text">
+    <h3>Follow Alex</h3>
+    <p>"See what he is up to"</p>
+  </div>
+  <a href="https://www.facebook.com/alexhonnold/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com/alexhonnold" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/alexhonnold/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/user/AlexHonnold" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.alexhonnold.com/" target="_blank"><i class="fas fa-globe"></i></a>
+  <p>Disclaimer - This website was created for educational purposes only. Designed and developed for Code Institute as part of a Project</p>
+</footer>
+
+<!-- font awesome kit -->
+
+<script src="https://kit.fontawesome.com/72dd490aed.js" crossorigin="anonymous"></script>
+
+<!-- burger menu event -->
+
+<script>
+const burgerMenu = document.getElementById('burger-menu');
+const navMenu = document.getElementById('nav-menu');
+
+burgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
