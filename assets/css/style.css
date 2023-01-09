@@ -36,8 +36,81 @@ h1 {
     margin-right: 30px;
 }
 
+#nav-menu li{
+  display:inline-block
+}
+
+#nav-menu a {
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  padding-right: 10px;
+  color:#292929
+}
+
+#nav-menu a:hover {
+  border-bottom: 2px solid #3a3a3a;
+  padding-bottom: 2px;
+}
+
+
+
 #logo, #nav-menu {
     line-height: 75px;
+}
+
+/* mobile burger menu */
+
+#burger-menu {
+  font-size: 220%;
+  float: right;
+  margin-right: 30px;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+@media (max-width: 763px) {
+  #logo {
+    font-size: 220%;
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 75px;
+    /* right: 0; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.322);
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 1px 1px 1px rgba(0,0,0,0.2); */
+    z-index: 1;
+    display: none;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 450%);
+  }
+  #nav-menu ul {
+    /* text-align: center; */
+    margin-left: 30px;
+  }
+
+  #nav-menu a:hover {
+    border-bottom: 2px solid #f7b91a;
+    padding-bottom: 2px;
+  }
+
+  #nav-menu.active {
+    display: block;
+  }
+  #burger-menu {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+  
+}
+
+@media (min-width: 763px) {
+  #burger-menu {
+    display: none;
+  }
 }
 
 /* hero banner with text */
@@ -56,8 +129,8 @@ h1 {
     height: 100%;
     width: 100%;
     position: relative;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
 }
 
 #hero-banner::after {
@@ -85,6 +158,18 @@ h1 {
 
 #hero-text li {
     list-style: none;
+  }
+
+  @media (max-width: 768px) {
+    #hero-text {
+      margin-top: 10px;
+    }
+    
+    #hero-text li {
+      font-size: 70%;
+      margin-left: -30px;
+    }
+
   }
 
   #hero-quote {
@@ -177,11 +262,15 @@ h1 {
   }
 }
 
+/* time line image */
+
+
+
 /* quote block styling */
 
 blockquote {
   background-color: #67c3f128;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #f7b91a;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
