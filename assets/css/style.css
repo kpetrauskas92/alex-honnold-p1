@@ -81,7 +81,7 @@ h1,h3 {
     position: absolute;
     top: 75px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.322);
+    background-color: rgba(20, 20, 20, 0.322);
     z-index: 1;
     display: none;
     /* clip-path: polygon(0 0, 100% 0, 100% 0%, 0 600%); */
@@ -471,4 +471,114 @@ footer p {
     grid-gap: 10px;
   }
  
+}
+
+/* sign-up page */
+
+
+#signup-title {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  
+}
+#signup-title h3{
+  font-size: 200%;
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+#signup-title p{
+  text-align: center;
+  padding: 0px 20px 20px;
+}
+
+#signup-container {
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px 80px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+#signup-form {
+  background-image: url('../images/signupbg-blurred.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#signup-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#signup-form input[type="text"], #signup-form input[type="email"] {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+fieldset {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.survey legend {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  color: #f7b91a;
+  padding-top: 80px;
+}
+
+
+.survey input[type="radio"] {
+  margin-left: 10px;
+}
+
+#signup-form input[type="submit"] {
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#signup-form input[type="submit"]:hover {
+  background-color: #f7b91a;
+}
+
+#gmaps h3 {
+  font-size: 200%;
+  text-align: center;
+}
+
+#gmaps p {
+  text-align: center;
+  padding: 0px 20px 20px;
 }

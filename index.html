@@ -24,7 +24,7 @@
       <ul>
         <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
         <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
-        <li><a href="#signup"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
+        <li><a href="sign-up.html"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
       </ul>
       </nav>
       <i id="burger-menu" class="fas fa-bars"></i>
@@ -39,7 +39,7 @@
           <li>Environmentalist</li>
           <li>Philanthropist</li>
         </ul>
-        <blockquote id="hero-quote">"It's not about the destination, it's about the journey."</blockquote>
+        <blockquote id="hero-quote">"It's not about the destination, it's about the journey. - Alex Honnold"</blockquote>
       </div>
     </section>
 
@@ -51,6 +51,7 @@
   <p>
     Professional rock climber who is best known for his free solo ascents of big walls. He is the first person to ever free solo El Capitan in Yosemite National Park, a feat that was chronicled in the award-winning documentary "Free Solo." Honnold is also known for his speed climbs, setting records on the Nose route of El Capitan and the Regular Northwest Face of Half Dome. In addition to his climbing accomplishments, <em>Honnold is also an avid environmentalist and philanthropist</em>. He has worked with organizations such as the Honnold Foundation and the Sierra Club to promote solar energy and protect climbing areas.
   </p>
+  <p>To learn more about Alex Honnold, visit <a href="https://en.wikipedia.org/wiki/Alex_Honnold" target="_blank">Wikipedia</a>.</p>
 </section>
 
 <!--timeline section-->
@@ -71,6 +72,7 @@
   </div>
 </section>
 
+<!-- timeline -->
 
   <ul class="timeline">
     <li class="timeline-item">
@@ -167,16 +169,11 @@
 
 <section>
   <h3 id="trailer-text">Free Solo Movie - Trailer</h3>
-  <p class="trailer-text__p ">"What made Alex Known to the World"</p>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/urRVZ4SW7WU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <p class="trailer-text__p ">"See how Alex made history"</p>
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/urRVZ4SW7WU?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
 <!-- footer-->
-
- <!-- <div id="follow-text">
-  <h3>Follow Alex</h3>
-  <p>"See what he is up to"</p>
-</div> -->
 
 <footer>
   <div id="follow-text">
@@ -205,54 +202,6 @@ burgerMenu.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 </script>
-
-<!-- youtube api?  -->
-
-<!-- <script>
-  // 2. This code loads the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  // 3. This function creates an <iframe> (and YouTube player)
-  //    after the API code downloads.
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'M7lc1UVf-VE',
-      playerVars: {
-        'playsinline': 1
-      },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-
-  // 4. The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-    event.target.playVideo();
-  }
-
-  // 5. The API calls this function when the player's state changes.
-  //    The function indicates that when playing a video (state=1),
-  //    the player should play for six seconds and then stop.
-  var done = false;
-  function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-      setTimeout(stopVideo, 6000);
-      done = true;
-    }
-  }
-  function stopVideo() {
-    player.stopVideo();
-  }
-</script> -->
 
 <!-- hero grayscale scrolling effect -->
 
