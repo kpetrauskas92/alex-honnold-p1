@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="From Yosemite to the world: the story of Alex Honnold">
-    <meta name="keywords" content="alex honnold, rock climbing, free solo, el capitan">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Yosemite to the world: the story of Alex Honnold">
+  <meta name="keywords" content="alex honnold, rock climbing, free solo, el capitan">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Alex Honnold</title>
+  <title>Alex Honnold</title>
+
 </head>
 <body>
   
 <!--navigation bar-->
 
-    <header>
-        <a href="index.html">
-            <h1 id="logo">Alex Honnold</h1>
-        </a>
-    <nav id="nav-menu">
-        
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
-        <li><a href="sign-up.html"fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
-      </ul>
-      </nav>
+  <header>
+
+    <a href="index.html">
+      <h1 id="logo">Alex Honnold</h1>
+    </a>
+
+  <nav id="nav-menu">    
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+      <li><a href="sign-up.html"fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
+    </ul>
+  </nav>
       <i id="burger-menu" class="fas fa-bars"></i>
-    </header>
+
+  </header>
 
 <!-- gallery tittle -->
 
-<section id="signup-title">
-<h3>Sign up</h3>
-<p>Get the latest updates on Alex and his adventures by signing up to our newsletter</p>
-</section>
+  <section id="signup-title">
+
+    <h3>Sign up</h3>
+    <p>Get the latest updates on Alex and his adventures by signing up to our newsletter</p>
+
+  </section>
 
 <!--image gallery-->
 
-<section class="signup-bg">
-    <div id="signup-container">
-        <form id="signup-form" method="POST" action="/submit-newsletter-signup">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder=" Enter your name">
-          
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required placeholder=" Enter your surname">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder=" Enter your email">
-            
-            <fieldset class="survey">
-                <legend>Would you try Rock Climbing?</legend>
-                    <label for="question1" class="survey"></label>
-                    <input type="radio" id="question1" name="question1" value="extremely_impressed" class="survey"> Yes, i would love to
-                    <label for="question2" class="survey"></label>
-                    <input type="radio" id="question2" name="question1" value="very_impressed" class="survey"> Maybe, someday
-                    <label for="question3" class="survey"></label>
-                    <input type="radio" id="question3" name="question1" value="impressed" class="survey"> I don't like rocks
-                    <label for="question4" class="survey"></label>
-                    <input type="radio" id="question4" name="question1" value="not_impressed" class="survey"> No way, i'm afraid of heights
-                    <label for="question5" class="survey"></label>
-                    <input type="radio" id="question5" name="question1" value="no_opinion" class="survey"> Never, too dangerous
-    </fieldset>
+  <section class="signup-bg">
 
-            <input type="submit" value="Sign Up">
-        </form>
+    <div id="signup-container">
+      <form id="signup-form" method="POST" action="/submit-newsletter-signup">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder=" Enter your name">
+          
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required placeholder=" Enter your surname">
+            
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder=" Enter your email">
+            
+    <fieldset class="survey">
+      <legend>Would you try Rock Climbing?</legend>
+        <label for="question1" class="survey"></label>
+          <input type="radio" id="question1" name="question1" value="extremely_impressed" class="survey"> Yes, i would love to
+          <label for="question2" class="survey"></label>
+          <input type="radio" id="question2" name="question1" value="very_impressed" class="survey"> Maybe, someday
+          <label for="question3" class="survey"></label>
+          <input type="radio" id="question3" name="question1" value="impressed" class="survey"> I don't like rocks
+          <label for="question4" class="survey"></label>
+          <input type="radio" id="question4" name="question1" value="not_impressed" class="survey"> No way, i'm afraid of heights
+          <label for="question5" class="survey"></label>
+          <input type="radio" id="question5" name="question1" value="no_opinion" class="survey"> Never, too dangerous
+    </fieldset>
+          <input type="submit" value="Sign Up">
+      </form>
         
     </div>
 </section>
 
 <section id="gmaps">
-<h3>El Capitan</h3>
-<p>Find the place where Alex made history.</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.3870474721025!2d-119.6375199!3d37.7340631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096edd824db8fbd%3A0x57adcc762fb3d403!2sEl%20Capitan!5e0!3m2!1sen!2sie!4v1673348289462!5m2!1sen!2sie" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <h3>El Capitan</h3>
+  <p>Find the place where Alex made history.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.3870474721025!2d-119.6375199!3d37.7340631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096edd824db8fbd%3A0x57adcc762fb3d403!2sEl%20Capitan!5e0!3m2!1sen!2sie!4v1673348289462!5m2!1sen!2sie" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <!-- footer-->
@@ -84,12 +89,12 @@
     <h3>Follow Alex</h3>
     <p>"See what he is up to"</p>
   </div>
-  <a href="https://www.facebook.com/alexhonnold/" target="_blank"><i class="fab fa-facebook"></i></a>
-  <a href="https://twitter.com/alexhonnold" target="_blank"><i class="fab fa-twitter"></i></a>
-  <a href="https://www.instagram.com/alexhonnold/" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.youtube.com/user/AlexHonnold" target="_blank"><i class="fab fa-youtube"></i></a>
-  <a href="https://www.alexhonnold.com/" target="_blank"><i class="fas fa-globe"></i></a>
-  <p>Disclaimer - This website was created for educational purposes only. Designed and developed for Code Institute as part of a Project</p>
+    <a href="https://www.facebook.com/alexhonnold/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/alexhonnold" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/alexhonnold/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/user/AlexHonnold" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.alexhonnold.com/" target="_blank"><i class="fas fa-globe"></i></a>
+    <p>Disclaimer - This website was created for educational purposes only. Designed and developed for Code Institute as part of a Project</p>
 </footer>
 
 <!-- font awesome kit -->

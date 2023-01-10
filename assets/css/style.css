@@ -79,21 +79,13 @@ h1,h3 {
 }
 
 #hero-banner {
-  background-image: url('../images/alex-portrait-banner.jpg');
+  background-image: url('../images/alex-portrait-banner.webp');
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
   filter: grayscale(0%);
-  /* -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%); */
   transition: filter 0.1s;
-  /* -webkit-transition: filter 0.1s;
-  -moz-transition: filter 0.1s;
-  -o-transition: filter 0.1s;
-  -ms-transition: filter 0.1s; */
 }
 
 
@@ -144,6 +136,7 @@ h1,h3 {
 }
 
 #about h2 {
+  position: absolute;
   text-transform: uppercase;
   font-size: 270%;
   margin-top: -70px;
@@ -318,7 +311,7 @@ footer p {
 /* gallery styling */
 
 #gallery-title {
-  background-image: url('../images/gallery/gallery-heading-cover.webp');
+  background-image: url('../images/gallery-heading.webp');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -588,5 +581,38 @@ fieldset {
 
   #about h2 {
     font-size: 220%;
+  }
+}
+
+@media (max-width: 365px) {
+
+  #logo {
+    font-size: 150%;
+  }
+
+  #about h2 {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 330px) {
+
+  #logo {
+    font-size: 140%;
+  }
+
+  #about h2 {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 310px) {
+
+  #logo {
+    font-size: 120%;
+  }
+
+  #about h2 {
+    font-size: 160%;
   }
 }
