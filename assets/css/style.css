@@ -56,8 +56,6 @@ h1,h3 {
   padding-bottom: 2px;
 }
 
-
-
 #logo, #nav-menu {
     line-height: 100px;
 }
@@ -72,183 +70,95 @@ h1,h3 {
   cursor: pointer;
 }
 
-@media (max-width: 860px) {
-  #logo {
-    font-size: 200%;
-  }
-
-  #nav-menu {
-    position: absolute;
-    top: 75px;
-    width: 100%;
-    background-color: rgba(20, 20, 20, 0.322);
-    z-index: 1;
-    display: none;
-    /* clip-path: polygon(0 0, 100% 0, 100% 0%, 0 600%); */
-  }
-  #nav-menu ul {
-    display: flex;
-    justify-content: center;
-    font-size: 75%;
-    
-  }
-
-  #nav-menu ul li {
-    margin: 0px 5px;
-  }
-
-  #nav-menu a {
-    color:#ffffff
-
-  }
-
-  #nav-menu a:hover {
-    border-bottom: 2px solid #f7b91a;
-    padding-bottom: 2px;
-  }
-
-  #nav-menu.active {
-    display: block;
-  }
-
-  #logo, #nav-menu {
-    line-height: 75px;
-}
-
-  #burger-menu {
-    display: block;
-    float: right;
-    cursor: pointer;
-  }
-  
-}
-
-@media (min-width: 860px) {
-  #burger-menu {
-    display: none;
-  }
-}
-
 /* hero banner with text */
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 #hero-banner {
-    background-image: url('../images/alex-portrait-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /* top: 0;
-    left: 0; */
-    filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
+  background-image: url('../images/alex-portrait-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  filter: grayscale(0%);
+  /* -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
+  -ms-filter: grayscale(0%); */
   transition: filter 0.1s;
-  -webkit-transition: filter 0.1s;
+  /* -webkit-transition: filter 0.1s;
   -moz-transition: filter 0.1s;
   -o-transition: filter 0.1s;
-  -ms-transition: filter 0.1s;
+  -ms-transition: filter 0.1s; */
 }
 
 
 #hero-banner::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    clip-path: polygon(0 0, 50% 0, 100% 150%, 0 150%);
+  content: "";
+  /* display: block; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  clip-path: polygon(0 0, 50% 0, 100% 150%, 0 150%);
   }
 
 #hero-text {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 2em;
-    text-align: left;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 130%;
+  text-align: left;
   }
 
 #hero-text li {
-    list-style: none;
+  list-style: none;
   }
 
 #hero-text li::before {
-  content: "⦿"; color: #f7b91a
+  content: "⦿ "; color: #f7b91a
 }
 
-  @media (max-width: 769px) {
-    #hero-text {
-      margin-top: 10px;
-    }
-    
-    #hero-text li {
-      font-size: 70%;
-      margin-left: -30px;
-    }
-
-  }
-
-  #hero-quote {
-    color: #ccc;
-    position: absolute;
-    bottom: 40px;
-    right: 0;
+#hero-quote {
+  color: #ccc;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
   }
   
 /* about section */
 
 #about{
-    margin: 10px;
-    padding: 10px;
+  margin: 20px;
+  padding: 20px;
 }
 
 #about h2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 160%;
-    margin-top: -50px;
-}
-
-@media only screen and (min-width: 769px) {
-  #about h2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 280%;
-    margin-top: -70px;
-  }
-  #about{
-    margin: 20px;
-    padding: 20px;
-  }
+  text-transform: uppercase;
+  font-size: 270%;
+  margin-top: -70px;
 }
 
 /* timeline section */
 
 #timeline-section {
-  margin: 20px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px;
 }
 
 #timeline-section h3 {
   font-size: 180%;
 }
-
 
 .timeline {
   display: flex;
@@ -291,19 +201,12 @@ h1,h3 {
 
 #timeline-images-container {
   position: relative;
-  max-height: 600px;
   max-width: 100%;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
 }
-
-
 
 #timeline-images img {
   width: 100%;
-  height: 50%;
-  object-fit: cover;
  }
 
  #timeline-images-container .caption {
@@ -317,32 +220,23 @@ h1,h3 {
   text-align: center;
 }
 
-/* timeline responsive */
-
-@media only screen and (min-width: 769px) {
-  .timeline {
-    flex-direction: row;
-  }
-  .timeline-item {
-    width: 50%;
-  }
-  .timeline-item:not(:last-child) {
-    border-right: 1px solid #ccc;
-  }
-}
-
 /* trailer text */
 
 #trailer-text {
-  
-  margin: 10px 20px 0px 20px;
-  padding: 10px 20px 0px 20px;
+  text-align: center;
   font-size: 180%;
+  padding: 10px 0px 5px 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
 }
+
 .trailer-text__p {
-  padding: 0px 20px 0px 20px;
-  margin: 10px 20px 20px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
 }
+
 /* quote block styling */
 
 blockquote {
@@ -398,20 +292,23 @@ footer {
   background-color: black;
   width: 100%;
   font-size: 180%;
-  transition: bottom 0.5s;
+  /* transition: bottom 0.5s; */
 }
 
 footer.visible {
    bottom: 0;
 }
+
 footer a {
   text-decoration: none;
   color: white;
   padding: 5px;
 }
+
 footer a:hover {
   color:#f7b91a
 }
+
 footer p {
   color: white;
   font-size: small;
@@ -429,8 +326,6 @@ footer p {
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
-  /* clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%); */
-  
 }
 
 #gallery-title h3{
@@ -462,19 +357,7 @@ footer p {
   object-fit: cover;
 }
 
-@media (max-width: 769px) {
-
-  #image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
- 
-}
-
 /* sign-up page */
-
 
 #signup-title {
   height: 100%;
@@ -554,7 +437,6 @@ fieldset {
   padding-top: 80px;
 }
 
-
 .survey input[type="radio"] {
   margin-left: 10px;
 }
@@ -581,4 +463,130 @@ fieldset {
 #gmaps p {
   text-align: center;
   padding: 0px 20px 20px;
+}
+
+/* responsive design screen size 1440px */
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+/* responsive design screen size 1024px */
+
+@media (max-width: 1024px) {
+  #logo {
+    font-size: 200%;
+  }
+  
+  #nav-menu {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.322);
+    z-index: 1;
+    display: none;
+  }
+
+  #nav-menu ul {
+    display: flex;
+    justify-content: center;
+    font-size: 75%;
+      
+  }
+  
+  #nav-menu a {
+    color:#ffffff
+  
+  }
+  
+  #nav-menu a:hover {
+    border-bottom: 2px solid #f7b91a;
+    padding-bottom: 2px;
+  }
+  
+  #nav-menu.active {
+    display: block;
+  }
+  
+  #logo, #nav-menu {
+    line-height: 75px;
+  }
+  
+  #burger-menu {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  #hero-text {
+    font-size: 100%;
+  }
+
+  #about h2 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 270%;
+    margin-top: -70px;
+  }   
+}
+
+@media (min-width: 1025px) {
+  #burger-menu {
+    display: none;
+  }
+}
+  
+/* responsive design screen size 768px and down */
+
+@media (min-width: 768px) {
+  .timeline {
+    flex-direction: row;
+  }
+  .timeline-item {
+    width: 50%;
+  }
+  .timeline-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+ 
+  #about h2 {
+    font-size: 250%;
+    margin-top: -70px;
+  }
+}
+
+/* responsive design screen size 480px */
+
+@media (max-width: 430px) {
+  #logo {
+    font-size: 190%;
+  }
+
+  #image-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+/* responsive design screen size 440px */
+
+@media (max-width: 400px) {
+  #logo {
+    font-size: 170%;
+  }
+
+  #about h2 {
+    font-size: 220%;
+  }
 }
