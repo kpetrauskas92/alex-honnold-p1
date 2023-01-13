@@ -27,6 +27,7 @@ Alex Honnold is a professional rock climber known for his free solo ascents of b
         * [Footer](<#footer>)
     * [**Gallery**](<#gallery>)
     * [**Sign up**](<#sign-up>)
+    * [**Thank you**](<#thank-you-page>)
     * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
@@ -59,9 +60,9 @@ The website has three pages. The [home page](index.html) is the default loading 
 ## Design Choices
 
  * ### Typography
-  The fonts chosen were 'Monsterrat' for the headings and 'Ovo' for the body text. They fall back to sans-serif respectively. 
+    The fonts chosen were 'Monsterrat' for the headings and 'Ovo' for the body text. They fall back to sans-serif respectively. 
     *  'Monsterrat' was chosen for the headings to give the user an inital welcoming feel.
-    * 'Ovo' is used for the body text as it goes along nicely with the headings whilst being easy to read for all.
+    *  'Ovo' is used for the body text as it goes along nicely with the headings whilst     being easy to read for all.
 
  * ### Colour Scheme
       The colour scheme eventually chosen is one based on gold, black and grey. The colour contrasts with the blue sky colour in many of the images. Yellow traditionally gives the impression of achievement, accomplishment and triumph. Users visiting the website should sense the feeling of extroadinary.
@@ -73,7 +74,7 @@ The website has three pages. The [home page](index.html) is the default loading 
 
 ## Features 
 
-This website is primarily for fans and enthusiasts of rock climbing, particularly those who are interested in free solo climbing and big wall ascents. The website offers information about Alex's climbs and expeditions, including detailed accounts and photos of his notable ascent on El Capitan. Additionally, the website includes a Gallery where Alex spends his days training for his next big free solo climb. The website also provides a sign up section where users can sign up and receive newsletter about Ale's journey. Overall, the website is for anyone who is interested in learning more about Alex Honnold and his climbing accomplishments, and who wants to gain inspiration and insights into the world of climbing.
+This website is primarily for fans and enthusiasts of rock climbing, particularly those who are interested in free solo climbing and big wall ascents. The website offers information about Alex's climbs and expeditions, including detailed accounts and photos of his notable ascent on El Capitan. Additionally, the website includes a Gallery where Alex spends his days training for his next big free solo climb. The website also provides a sign up section where users can sign up and receive newsletter about Alex's journey. Overall, the website is for anyone who is interested in learning more about Alex Honnold and his climbing accomplishments, and who wants to gain inspiration and insights into the world of climbing.
 
 # Home
 
@@ -179,6 +180,14 @@ This website is primarily for fans and enthusiasts of rock climbing, particularl
 
 [Back to top](<#contents>)
 
+## Thank You Page
+
+  - A thank you page is a webpage that is presented to the user after they have submitted a query on the sign-up page. This keeps the user on the website and avoids the need for them to navigate away. The page usually includes a message of appreciation for the user's action.
+
+![Sign Up](assets/docs/thankyou-page.png)
+
+[Back to top](<#contents>)
+
 ### Future Features
 
 - Add Error 404 page with back to home link
@@ -214,6 +223,8 @@ Please refer to [**_here_**](TESTING.md) for more information on testing.
 2. Once in Settings, navigate to the **Pages** tab on the left hand side.
 3. Under **Source**, select the branch to **master**, then click **save**.
 4. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+![Deployment](assets/docs/deploy.png) 
 
 The live link can be found here - https://kpetrauskas92.github.io/alex-honnold-p1
 
@@ -252,6 +263,7 @@ The live link can be found here - https://kpetrauskas92.github.io/alex-honnold-p
 * [Dev.to](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci/) Idea used for burger menu.
 * [CSSPortal](https://www.cssportal.com/css-clip-path-generator/) Idea for image clip path.
 * [Javascript.info](https://javascript.info/onscroll) Idea used for grayscale effect on scroll.
+* [Reame.md](https://github.com/EwanColquhoun/wawaswoods/blob/master/README.md) Some ideas taken
 
 [Back to top](<#contents>)
 

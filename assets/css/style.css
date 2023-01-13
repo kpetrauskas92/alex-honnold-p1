@@ -306,10 +306,16 @@ h1,h3 {
 
 footer {
   position: static;
+  left: 0;
+  bottom: 0;
   text-align: center;
   background-color: black;
   width: 100%;
   font-size: 180%;
+}
+
+footer.visible {
+  bottom: 0;
 }
 
 footer a {
@@ -348,7 +354,7 @@ footer p {
   background-color: #52525259;
 }
 
-.gallery-article {
+.gallery-text {
   margin: 1rem;
   padding: 1rem;
 }
@@ -517,15 +523,7 @@ fieldset {
 @media (min-width: 1440px) {
   body {
     width: 1440px;
-    margin: 0;
-  }
-}
-
-/* burger menu 835px */
-
-@media (min-width: 835px) {
-  #burger-menu {
-    display: none;
+    margin: 0 auto;
   }
 }
 
@@ -573,6 +571,14 @@ fieldset {
    #about h2 {
     font-size: 240%;
   }   
+}
+
+/* burger menu 835px */
+
+@media (min-width: 835px) {
+  #burger-menu {
+    display: none;
+  }
 }
   
 /* responsive design screen size 768px */

@@ -1,6 +1,6 @@
 # Testing
 ## Code Validation
-The Alex Honnold site has be throughly tested. All the code has been run through the [W3C html Validator](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Minor errors were found on the home and inspiration pages. After a fix and retest, no errors were returned for both. 
+The Alex Honnold website has been throughly tested. All the code has been run through the [W3C html Validator](https://validator.w3.org/) and the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). No error were found after the last test.
 
 The HTML validator results for each page are below:
 
@@ -44,32 +44,34 @@ Google Chrome, Microsoft Edge, Safari and Mozilla Firefox. Appearance, functiona
 ## Known Bugs
 * ### Resolved
 
-    * During validation two bugs became known during the validation stage, a brief description is below:
-
-    * Gallery page - 
+    * During HTML validation on gallery.html one bug became known, a brief description is below:
     ![W3C Validator test result](assets/docs/testing/gallery-bug.png)
-This was an oversight from the development phase when the font size was being modified. It was easily fixed by using the correct closing tag, \</h5>.
+    This was an oversight from the development on semantics when the \<article> attribute was used without a heading. It was easily fixed by deleting the tag, and leaving it as a paragraph \<p> only.
 
-    * /// - 
-    ///
+    * At the end of testing a bug appeared to cause a gap between the footer and the border of the page at the bottom 
+    ![Footer Gap Bug](assets/docs/testing/gap-bug.png)
+    This was an oversight from the development phase when the footer disclaimer was being updated with links. It was easily fixed by closing the a href attribute with \</a>. The link was showing as having another link because it was not properly closed as it also has an \<i> attribute for icon.
 
 * ### Unresolved
-    * ///
-    * ///
+
+    * During the testing of responsiveness in different browsers a bug was found that did not display "Font Awesome" icons on Ipads on the nav bar. 
+    ![Safari Ipad Icons](assets/docs/testing/safari-ipad.png)
+    
     
 
 ## Additional Testing
 ### Lighthouse
-The site was also tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Developer Tools to test each of the pages for:
+
+The site was also tested using [Page Speed Insights](https://pagespeed.web.dev) to test each of the pages for:
 * Performance - How the page performs whilst loading.
 * Accessibility - Is the site acccessible for all users and how can it be improved.
 * Best Practices - Site conforms to industry best practices.
 * SEO - Search engine optimisation. Is the site optimised for search engine result rankings.
 
-As an example the results for home page are below:
-![Lighthouse test results]()
+    As an example the results for home page are below:
+    ![Lighthouse test results](assets/docs/testing/sitespeed.png)
 
-This part of the testing process showed up that the site was slow to load. 
+    This part of the testing process showed up that the site was slow to load due to the javascript of youtube trailer. 
 
 ### Peer review
 In addition to the above testing the beta version of the site was put through its paces by peers, both in the software development field and outside. The results highlighted responsive design weakness for a type of mobile device that was rectified with minor CSS amendments. There were also minor spelling and grammar errors that have since been fixed.
