@@ -306,16 +306,10 @@ h1,h3 {
 
 footer {
   position: static;
-  left: 0;
-  bottom: 0;
   text-align: center;
   background-color: black;
   width: 100%;
   font-size: 180%;
-}
-
-footer.visible {
-   bottom: 0;
 }
 
 footer a {
@@ -330,8 +324,8 @@ footer a:hover {
 
 footer p {
   color: white;
-  font-size: small;
-  padding: 15px 15px 15px 15px;
+  font-size: 12px;
+  padding: 10px 5px;
 }
 
 /* gallery styling */
@@ -504,14 +498,14 @@ fieldset {
   object-fit: cover;
   justify-content: center;
   width: 100%;
-  height: 1020px;
+  height: 1000px;
 }
 
 .thankyou-text {
   position: absolute;
   font-size: 200%;
   text-align: center;
-  top: 20%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -523,17 +517,24 @@ fieldset {
 @media (min-width: 1440px) {
   body {
     width: 1440px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
-/* responsive design screen size 1024px */
+/* burger menu 835px */
+
+@media (min-width: 835px) {
+  #burger-menu {
+    display: none;
+  }
+}
+
+/* responsive design screen size 834px */
 
 @media (max-width: 834px) {
   #logo {
     font-size: 200%;
   }
-  
   #nav-menu {
     position: absolute;
     top: 75px;
@@ -542,58 +543,39 @@ fieldset {
     z-index: 1;
     display: none;
   }
-
   #nav-menu ul {
     display: flex;
     justify-content: center;
-    font-size: 75%;
-      
+    font-size: 75%;    
   }
-  
   #nav-menu a {
     color:#ffffff;
     text-shadow: 2px 2px #292929d5;
-  
   }
-  
   #nav-menu a:hover {
     border-bottom: 2px solid #f7b91a;
     padding-bottom: 2px;
   }
-  
   #nav-menu.active {
     display: block;
   }
-  
   #logo, #nav-menu {
     line-height: 75px;
   }
-  
   #burger-menu {
     display: block;
     float: right;
     cursor: pointer;
   }
-
   #hero-text {
     font-size: 100%;
   } 
-
    #about h2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 270%;
-    margin-top: -70px;
+    font-size: 240%;
   }   
 }
-
-@media (min-width: 835px) {
-  #burger-menu {
-    display: none;
-  }
-}
   
-/* responsive design screen size 768px and down */
+/* responsive design screen size 768px */
 
 @media (min-width: 768px) {
   .timeline {
@@ -613,7 +595,6 @@ fieldset {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
- 
   #about h2 {
     font-size: 250%;
     margin-top: -70px;
@@ -636,24 +617,37 @@ fieldset {
 /* responsive design screen size 375px */
 
 @media (max-width: 375px) {
+  #logo {
+    font-size: 160%;
+  }
   #about h2 {
     font-size: 200%;
   }
-
 }
 
 /* responsive design screen size 320px */
-
 
 @media (max-width: 320px) {
   #logo {
     font-size: 140%;
   }
+  #nav-menu ul {
+    display: flex;
+    justify-content: center;
+    font-size: 60%;
+  }
   #about h2 {
-    font-size: 180%;
+    font-size: 160%;
   }
-
   .hero-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
+}
+
+/* responsive design screen size 300px */
+
+@media (max-width: 300px) {
+  #logo {
+    font-size: 120%;
+  }  
 }
