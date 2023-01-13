@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Yosemite to the world: the story of Alex Honnold">
+  <meta name="keywords" content="alex honnold, rock climbing, free solo, el capitan">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Alex Honnold</title>
+
+</head>
+<body>
+  
+<!--navigation bar-->
+
+<header>
+    <a href="index.html">
+      <h1 id="logo">Alex Honnold</h1>
+    </a>
+<nav id="nav-menu">    
+    <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+        <li><a href="sign-up.html"><i class="fa-solid fa-right-to-bracket"></i> Sign Up</a></li>
+    </ul>
+</nav>
+    <i id="burger-menu" class="fas fa-bars"></i>
+</header>
+
+<!--thank you section-->
+<section>
+    <div id="thank-you__container">
+        <img src="assets/images/thank-you.webp" alt="Thank you, background image">
+            <div class="thankyou-text">
+                <h3>Thank You!</h3>
+                <p>for subscribing</p>
+            </div>
+      </div>      
+</section>
+
+<!-- footer-->
+
+<footer class="signup-footer">
+  <div id="follow-text">
+    <h3>Follow Alex</h3>
+    <p>"See what he is up to"</p>
+  </div>
+    <a href="https://www.facebook.com/alexhonnold/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/alexhonnold" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/alexhonnold/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@alexhonnold9601" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.alexhonnold.com/" target="_blank"><i class="fas fa-globe"></i></a>
+    <p>Disclaimer - This website was created for educational purposes only. Designed and developed for <a href="https://codeinstitute.net/ie/" target="_blank">"Code Institute"</a>as part of a<a href="https://github.com/kpetrauskas92/alex-honnold-p1" target="_blank"><i class="fa-brands fa-github" style="color:#f7b91a"></i> project.</p>
+</footer>
+
+<!-- font awesome kit -->
+
+<script src="https://kit.fontawesome.com/72dd490aed.js" crossorigin="anonymous"></script>
+
+<!-- burger menu event -->
+
+<script>
+const burgerMenu = document.getElementById('burger-menu');
+const navMenu = document.getElementById('nav-menu');
+
+burgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
